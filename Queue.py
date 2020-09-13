@@ -24,7 +24,7 @@ def dequeue(que):
         front=0
 
         item=que.pop(front)
-        print("the item poped is:",item)
+        print("the item dequeued is:",item)
 
 
 #this function displays the queue in LIFO format.
@@ -89,9 +89,12 @@ while 1:
 
     elif ch==4:
 
-        print("--------------------------THANKYOU FOR USING MY STACK IMPLEMENTATION-------------------------------")
+        print("--------------------------THANKYOU FOR USING MY QUEUE IMPLEMENTATION-------------------------------")
         break #breaks the loop for choice.
 
     else:
 
         print("Please enter a valid choice (1-4)")
+
+
+
