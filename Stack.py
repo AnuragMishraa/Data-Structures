@@ -1,5 +1,5 @@
 
-#this function deals with adding an element to the stack.
+#this function deals with adding an element to the stack in FIFO format.
 def push(stk,ele):
 
     top=len(stk)-1 #index of last element in the stack.
@@ -9,7 +9,7 @@ def push(stk,ele):
 
 
 
-#this function deals with removing an element from the stack.
+#this function deals with removing an element from the stack in FIFO format.
 def pop(stk):
 
     if isempty(stk):
@@ -23,7 +23,7 @@ def pop(stk):
 
 
 
-#this function deals with displaying the stack contents.
+#this function deals with displaying the stack contents in FIFO format.
 def display(stk):
 
     if isempty(stk):
