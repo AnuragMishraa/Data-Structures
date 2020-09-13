@@ -2,10 +2,9 @@
 #this function deals with adding an element to the stack.
 def push(stk,ele):
 
-    front=len(stk)-1 #index of last element in the stack.
+    top=len(stk)-1 #index of last element in the stack.
     
     stk.append(ele)  #inserts the element at the end of the stack.
-    
     print(ele,"is successfully pushed to the Stack!!!") 
 
 
@@ -17,9 +16,9 @@ def pop(stk):
         print("Stack is empty --> Underflow")
     
     else:
-        front=len(stk)-1 #index of last element in the stack.
+        top=len(stk)-1 #index of last element in the stack.
 
-        item=stk.pop(front) #removes the last element of the stack.
+        item=stk.pop(top) #removes the last element of the stack.
         print("the poped item is:",item)
 
 
@@ -31,11 +30,11 @@ def display(stk):
         print("Stack is empty --> Underflow")
 
     else:
-        front=len(stk)-1 #index of last element in the stack.
+        top=len(stk)-1 #index of last element in the stack.
 
-        print(stk[front],"<--TOP") #prints the last elemnent of the stack.
+        print(stk[top],"<--TOP") #prints the last elemnent of the stack.
 
-        for i in range(front-1,-1,-1):
+        for i in range(top-1,-1,-1):
             print(stk[i]) #prints the coresponding elememt of the stack.
 
 
